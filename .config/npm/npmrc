@@ -2,4 +2,3 @@ prefix=${XDG_DATA_HOME}/npm
 cache=${XDG_CACHE_HOME}/npm
 tmp=${XDG_RUNTIME_DIR}/npm
 init-module=${XDG_CONFIG_HOME}/npm/config/npm-init.js
-//registry.npmjs.org/:_authToken=3165c5d3-4945-4e09-a23a-15aead326183

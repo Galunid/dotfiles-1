@@ -17,9 +17,6 @@ arc-icon-theme Icon theme
 networkmanager NetworkManger
 systemd:NetworkManager
 
-[dash]
-dash Fast shell
-
 [sxhkd]
 sxhkd Hotkey assignment
 bc Calculator
@@ -30,10 +27,7 @@ perl-anyevent-i3 i3 eventlistener library
 pod2man Make dependency
 
 [i3]
-i3-wm Window manager
-
-[nitrogen]
-nitrogen Wallpapers
+i3-gaps Window manager
 
 [xwallpaper]
 xwallpaper Simple wallpapers
@@ -46,15 +40,10 @@ imagemagick beets embedArt plugin dependency
 
 [scripts]
 ack hhlighlighter dependency
-jq JSON processor
 rofi Prompt (dmenu alternative)
 networkmanager-dmenu-git Control NetworkManager through rofi
 conky Desktop widgets
 xclip X clipboard interface
-clipit Clipboard interface
-wget Download util
-curl Download util
-shellcheck Script debugging
 python-eyed3 Mp3 tagging
 id3v2 Mp3 tagging
 
@@ -64,33 +53,9 @@ conky Desktop widgets
 [keepass]
 keepassxc Password database
 
-[kitty]
-kitty-git Terminal emulator
-
-[tmux]
-tmux Terminal muliplexer (multiple shells inside the same terminal window)
-# tmate Share tmux sessions
-
-[gimp]
-gimp Photo editing
-
-[zeal]
-zeal Programming language/tool offline documentation
-
-[vlc]
-vlc Video player
-
 [mpv]
 mpv Minimal player
 task-spooler Queue commands for linear execution
-
-## viewer/reader
-[fbreader]
-fbreader GUI epub reader
-
-[epr]
-epr-git CLI epub reader
-# sudo sed -i "s|feh|sxiv|" $(which -a epr)
 
 [zathura]
 zathura Reader
@@ -99,65 +64,20 @@ zathura-pdf-mupdf Pdf plugin
 [sxiv]
 sxiv Minimal image viewer
 
-[gwenview]
-gwenview Extensive image viewer
-
-[newsboat]
-newsboat RSS feed reader
-w3m Terminal browser
-
-[yacreader]
-# yacreader-nopdf Comicbook reader # wrong version, install manually
-libunarr Dependency
-poppler-qt5 Dependency
-
 ## browsers
 [firefox]
-firefox-nightly Experimental firefox
-
-[firefox-dev]
-firefox-developer-edition Developer edition of firefox
-
-[chromium]
-# ungoogled-chromium-bin Free version of chromium
-chromium-widevine Chromium module required for netflix
-
-[surf]
-surf Minimal browser
+firefox Experimental firefox
 
 ## utils
 [polybar]
 polybar Status bar
 
-## misc
-[bleachbit]
-bleachbit System cleaner
-
-[gcolor]
-gcolor2 Color picker
-
-# tui
-[cmus]
-cmus Music player
-
 [htop]
 htop Process manager
-
-[mosh]
-mosh Better ssh
-
-[taskell]
-# taskell-bin Kanban board
-
-[calcurse]
-calcurse Calendar and todos
 
 [transmission]
 transmission-cli Torrent daemon
 tremc Transmission TUI
-
-[rclone]
-rclone Sync local and remote directories
 
 [rsync]
 rsync Sync local and remote directories
@@ -168,11 +88,7 @@ youtube-dl Youtube downloader
 ## file managers
 [ranger]
 ranger File manager
-# vimfm
-
-# cli
-## apps
-#nodejs-webtorrent-cli Streaming torrent client
+vifm
 
 ## text
 [figlet]
@@ -182,37 +98,19 @@ figlet-fonts More figlet fonts
 [neofetch]
 neofetch Print system info
 
-## util
-#fd Better find
-[scrot]
-scrot Screenshot utility
+[flameshot]
+flameshot Screenshot utility
 
 #pjson Pretty print json
 
 [zsh]
 zsh-syntax-highlighting Highlight whever the typed command exists
 entr Run command if something changes
-exa Better ls
-bat Better cat
-npm:fx JSON explorer
-renameutils qmv mass rename util
 
 [vim]
-vim The text editor
 neovim The newer text editor
 fzf Fuzzy finder
 par Text wrapper, 80 chars
-
-## service clients
-[ffsend]
-ffsend-bin Firefox send client
-
-[mega]
-megacmd-bin MEGA.nz client
-
-[mullvad]
-mullvad-vpn Mullvad client
-systemd:mullvad-daemon Enable the mullvad daemon
 
 # system
 ## xorg tools
@@ -259,17 +157,8 @@ systemd:acpid
 [intel]
 xf86-video-intel Video drivers for intel chips
 
-[amd]
-xf86-video-amdgpu Video drivers for intel chips
-xf86-video-ati DDX driver, 2D acceleration in Xorg
-
 [pip]
 python-pip Python package manager
-
-## building/c
-[c-dev]
-gcc C/C++ compiler
-gdb
 
 ## themes
 [themes]
@@ -281,10 +170,6 @@ kvantum-qt5 QT themes
 ttf-dejavu Default
 ttf-joypixels Emojis
 ttf-roboto Roboto
-
-## util
-[bluez]
-bluez-utils bluetoothctl utility
 
 ## power management
 # See: https://wiki.archlinux.org/index.php/TLP
@@ -306,13 +191,6 @@ rar Rar and unrar files
 docker Docker daemon
 docker-compose Docker simplification
 
-## files
-[mongodb]
-mongodb MongoDB database
-
-[ngrok]
-ngrok Open localhost to the outside
-
 [pulseaudio]
 alsa-utils Alsa utilities
 pulseaudio Pulseaudio server
@@ -325,119 +203,18 @@ ncpamixer Pulseaudio mixer
 [node]
 nodejs Javascript runtime
 npm Node.js package manager
-yarn npm alternative
-
-[dictcc]
-npm:dict-cc-cli Offline dict.cc
-# run dict css setup script
-
-[mangareader-dl]
-# to fix, dl from server
-# npm:mangareader-dl Manga downloader
-
-[fkill]
-fkill Process killer
-
-[js-dev]
-python-grip Reader markdown file with github styles
-
-npm:np npm release helper
-
-npm:yo Scaffolding tool
-npm:generator-jneidel Personal yo generator
-
-npm:typescript Typescript compiler
-
-npm:webpack Javscript build tool
-npm:webpack-cli Webpack interface
-
-npm:concurrently Run scripts in parallel
-npm:nodemon Restart node command on changes
-npm:browser-sync Reload browser on changes
-
-npm:markdown-toc Create a md toc
-npm:doctoc Create a md toc
-
-npm:updates npm update manager
-
-npm:jest Test runner
-
-[eslint]
-npm:eslint@5 Javascript linter
-npm:eslint_d Eslint script for vim
-npm:prettier Code formatter (for vim)
-
-npm:eslint-plugin-node Eslint node ruleset
-npm:eslint-plugin-unicorn Eslint unicorn ruleset
-
-npm:@typescript-eslint/parser Typescript eslint parser
-npm:@typescript-eslint/eslint-plugin Typescript eslint rules
-npm:typescript Typescript compiler
-
-## music
-[kid3]
-kid3 Visual (mp3) tag editor
-nemo File manager for dragging images over
-
-[mutagen]
-# unavailable
-# mutagen-tools Cli tagging tools
-
-## wine
-[wine]
-wine Run windows applications
-wine-mono wine dependency
-
-[latex]
-texlive-core Core stuff
-biber Bibliography adon
-vim-live-latex-preview Vim plugin
-mupdf Pdf viewer for vim-live-latex-preview
 
 [networks]
 bind-tools Network debugging
 wireshark-qt Network sniffer
 traceroute Trace router hops
 
-[java]
-jdk-openjdk Java environment
-
-[signal]
-signal-desktop-bin Desktop version
-# signal-cli CLI version
-
-[cron]
-fcron Cron implementation
-systemd:fcron Enable cron
-
-[xournalpp]
-xournalpp PDF editing
-
 [factorio]
 factorio-experimental Factorio
-
-[khal]
-khal Calendar cli
-vdirsyncer CalDAV sync
-
-[fs]
-btrfs-progs btrfs
-exfat-utils exfat
-ntfs-3g ntfs
-simple-mtpfs mount mtpfs (android)
 
 [android]
 android-tools
 simple-mtpfs mount mtpfs
-
-[lf]
-lf File manager
-glow-bin Markdown preview
-xml2 Epub preview
-python-pdftotext Pdf preview
-
-[brave]
-brave-bin Brave Browser
 
 [mpd]
 mpd Music player daemon

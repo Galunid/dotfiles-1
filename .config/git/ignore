@@ -1,9 +1,0 @@
-todo.md
-*.un~
-.vscode/
-package-lock.json
-yarn.lock
-node-modules/
-Session.vim
-tmp/
-.yo-rc.json
